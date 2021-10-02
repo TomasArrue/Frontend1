@@ -1,5 +1,47 @@
+body{
+    margin: 0px;
+}
+
+#menu-reginal{
+    background-color: black;
+    color: white;
+}
+
+#menu-reginal ul {
+    text-align: right;
+}
+
+#menup{
+    background-color: #F0A83E;
+    color: white;
+}
+
+#menup ul{
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+#banner{
+    background-image: url(../img/foto.jpg);
+}
+
+
+
+
+
 .productos{
+    text-align: center;
+}
+
+#productos{
     display: flex;
+    align-items: center;
 }
 
 article{
