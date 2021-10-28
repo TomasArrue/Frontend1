@@ -1,85 +1,211 @@
 body {
-    margin: 0xp;
-    font-family: Be Vietnam;
+    margin: 0px;
+    font-family: 'Be Vietnam', sans-serif;
 }
 
-nav{
-    padding: 2rem;
+header{
+    padding: 4.688rem 11.875rem 4.688rem 11.875rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-div.menu {
+header svg{
+    display: none;
+}
+
+div.logo{
+    margin-top: 1rem;
+}
+
+nav.menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-div.menu span{
+nav.menu a{
+    color: #242E52;
     margin-left: 2rem;
+    text-decoration:none;
 }
 
 .button{
     background-color: #F3603B;
     color: white;
-    padding: 1rem;
+    padding: 1rem 2rem 1rem 2rem;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
-    
+    text-decoration:none;
+}
+
+.button-f{
+    background-color: #F3603B;
+    color: white;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 50px;
+    text-decoration:none;
+}
+
+.button:hover{
+    opacity: 50%;
+    transition: 450ms;
+    transform: scale(1.1);
 }
 
 section.home{
     display: flex;
     justify-content: space-between;
-    padding: 5rem;
+    padding: 0rem 9rem 0rem 10.313rem;
+}
+
+section.home div{
+    width: 30vw;
 }
 
 section.home div h1{
     color: #232C50;
-    font-size: xxx-large;
+    font-size: 3.625rem;
+    width: 35vw;
+}
+
+section.home div p{
+    width: 25vw;
+    font-size: 1.300rem;
+}
+
+section.home div div{
+    margin-top: 3rem;
+}
+
+section.home img{
+    width: 37rem;
+    height: 33rem;
 }
 
 section.sobre-nosotros {
     display: flex;
-    padding: 5rem;
+    justify-content: space-between;
+    padding: 0rem 10.313rem 0rem 10.313rem;
+}
+
+section.sobre-nosotros h2{
+    color: #232851;
+    font-size: 2.25rem;
+    width: 35vw;
+}
+
+section.sobre-nosotros div p{
+    font-size: 1.100rem;
+    margin-top: 3rem;
+    width: 25vw;
+}
+
+h3 {
+    position: relative;
+    right: 5.2rem;
+}
+
+h3 span{
+    position: relative;
+    right: 5rem;
+}
+
+section.sobre-nosotros div article h3{
+    font-size: 1rem;
+    color: #323851;
+}
+
+section.sobre-nosotros div article p{
+    font-size: 1rem;
+    color: #B3B2B7;
 }
 
 section.testimonios{
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+    margin: 5rem 0rem 1rem 1rem;
 }
 
-section.article{
+section.testimonios h2{
+    font-size: 2.451rem;
+    color: #242E53;
+
+}
+
+section.perfiles{
     display: flex;
     padding: 5rem;
+    justify-content: center;
 }
 
-section.article article{
+section.perfiles article{
     background-color: #FAFAFA;
 }
 
+section.perfiles article img{
+    position: relative;
+    bottom: 2rem;
+    width: 4.375rem;
+    height: 4.375rem;
+}
+
+section.perfiles article p{
+    position: relative;
+}
+
+section.perfiles article p.titulo{
+    color: #3F4868;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+section.perfiles article p.cuerpo{
+    color: #B9B9C1;
+    font-size: 1rem;
+    bottom: 1rem;
+    text-align: center;
+    width: 24.375rem;
+}
+
 section.last{
-    padding: 5rem;
+    margin-top: 5rem;
     background-color: #F3613C;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
 }
 
-h4{
+section.last h4{
+    color: white;
+    width: 27.375rem;
+    text-align:start;
+    margin-left: 1rem;
     font-size: xx-large;
+}
+
+section.last div{
+    margin-top: 5rem;
 }
 
 .button-white{
     background: white;
+    color: #F3603B;
     box-shadow: 0px 4px 8px rgba(243, 96, 59, 0.5);
     border-radius: 50px;
-    padding: 1rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    text-decoration:none;
+}
+
+.button-white:hover{
+    color: #ffbaa9;
+    transition: 450ms;
 }
 
 footer {
+    padding: 4rem 4rem;
     color: #FAFAFA;
     background-color: #1E1E26;
     display: flex;
@@ -99,8 +225,62 @@ footer section.redes div{
 }
 
 footer section.sections{
-    display: flex;    
+    display: flex;
+    justify-content: space-between;
 }
+footer section.redes div.socialmedia i{
+    padding-left: 0.7rem;
+}
+
+section.sections div a{
+    padding-bottom: 1.5rem;
+}
+div.colum1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 9rem;
+    text-align: start;
+}
+
+div.colum1 a{
+    color: white;
+    text-decoration:none;
+    transition: 450ms;
+}
+
+div.colum1 a:hover{
+    color: #F3603B;
+}
+
+div.colum2{
+    color: white;
+    text-decoration:none;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    position: relative;
+    left: 5rem;
+}
+
+div.colum2 a{
+    color: white;
+    text-decoration:none;
+    transition: 450ms;
+}
+
+div.colum2 a:hover{
+    color: #F3603B;
+}
+
+div.socialmedia a{
+    color: white;
+    font-size: 1.5rem;
+}
+div.socialmedia a:hover{
+    color: #F3603B;
+}
+
 
 footer section.buscador{
     display: flex;
@@ -108,14 +288,279 @@ footer section.buscador{
     justify-content: space-between;
 }
 
-.button-buscador{
+div.copiright-1{
+    padding-top: 3rem;
+}
+
+input[type=email]{
     color: #A0A0A0;
     background: white;
     border-radius: 50px;
-    padding: 1rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
 }
 
 footer section.buscador div{
     display: flex;
     justify-content: center;
+}
+
+p.copiright{
+    color: #8C8C94;
+}
+
+input[type=button]{
+    background-color: #F3603B;
+    color: white;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.input[type=button]:hover{
+    opacity: 50%;
+}
+
+.socialmedia a:hover{
+    color: #F3603B;
+    transition: 250ms;
+    transform: calc(1.1);
+}
+
+div.copiright-2{
+    display: none;
+}
+
+@media (max-width: 400px){
+    body{
+        max-width: 375px;
+    }
+    header{
+        padding: 1.5rem 1rem 2rem 1rem;
+        max-width: 375px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-between;
+    }
+    nav.menu a{
+        display: none;
+    }
+    header a{
+        display: none;
+    }
+    header svg{
+        position: relative;
+        top: 1rem;
+        display: unset;
+    }
+    section.home{
+        padding: unset;
+        padding-bottom: 5rem;
+        width: 375px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+    section.home div{
+        width: unset;
+        text-align: center;
+        max-width:375px;
+    }
+    section.home div h1{
+        font-size: 2.5rem;
+        width: unset;
+        max-width:375px;
+    }
+    section.home div p{
+        max-width: 375px;
+        width: 375px;
+        font-size: 1.2rem;
+        opacity: 50%;
+    }
+    section.home img{
+        max-width: 375px;
+        width: auto;
+        height: auto;
+    }
+    section.sobre-nosotros{
+        max-width: 375px;
+        width: unset;
+        padding: 1rem;
+        margin: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    section.sobre-nosotros div.primero{
+        padding-bottom: 4rem;
+    }
+    section.sobre-nosotros h2{
+        max-width: 375px;
+        padding-bottom: 10rem;
+        width: unset;
+        padding: 1rem;
+        margin: unset;
+    }
+    section.sobre-nosotros div.primero p{
+        max-width: 375px;
+        width: unset;
+        padding: unset;
+        margin: unset;
+    }
+    section.sobre-nosotros div.different{
+        width: unset;
+        text-align: unset;
+        justify-content: unset;
+    }
+    section.sobre-nosotros div.different article{
+        width: unset;
+        text-align: unset;
+        font-size: 1rem;
+        justify-content: unset;
+        padding-bottom: 1rem;
+    }
+    section.sobre-nosotros div.different article p{
+        width: unset;
+        text-align: justify;
+        justify-content:unset;
+    }
+    section.sobre-nosotros div.different article h3{
+        color: #323851;
+    }
+    h3{
+        text-align: justify;
+        position: unset;
+        right: unset;
+        background-color: #ffebe6 ;
+        border-radius: 35% 10% 10% 35%;
+        padding: 1rem 0rem 1rem 0rem;
+        color: white;
+    }
+    h3 span{
+        position: unset;
+        right: unset;
+    }
+    section.testimonios{
+        max-width: 375px;
+        width: auto;
+        padding: 0rem;
+        padding-bottom: 7.5rem;
+        margin: 0rem;
+        display: flex;
+        flex-direction: column;
+    }
+    section.testimonios h2{
+        padding-bottom: 2rem;
+    }
+    section.testimonios section.perfiles{
+        max-width: 375px;
+        width: auto;
+        padding: 0rem;
+        margin: 0rem;
+        display: flex;
+        flex-direction: column;
+    }
+    section.testimonios section.perfiles article.art1{
+        display: none;
+    }
+    section.testimonios section.perfiles article.art3{
+        display: none;
+    }
+    section.testimonios section.perfiles article.art2 p.titulo{
+        position: relative;
+        bottom: 1.7rem;
+    }
+    section.testimonios section.perfiles article.art2 p.cuerpo{
+        max-width: 375px;
+    }
+    section.testimonios div a{
+        position: relative;
+        top: 3.5rem;
+    }
+    section.last{
+        max-width: 375px;
+        width: auto;
+        padding: 0rem;
+        padding-bottom: 6rem;
+        margin: 0rem;
+        display: flex;
+        flex-direction: column;
+    }
+    section.last h4{
+        max-width: 375px;
+        width: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        text-align: center;
+        justify-content: center;
+        font-size: 2.6rem;
+    }
+    section.last div{
+        margin-top: unset;
+    }
+
+    footer{
+        max-width: 375px;
+        width: auto;
+        padding: 0rem;
+        margin: 0rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    footer section.redes{
+        max-width: 375px;
+        width: auto;
+        padding: 1rem 0rem 1rem 0rem;
+        margin: 0rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    footer section.redes div.socialmedia{
+        padding-bottom: 2rem;
+    }
+    footer section.redes div.socialmedia i{
+        padding-left: 2rem;
+    }
+    footer section.sections{
+        max-width: 375px;
+        width: auto;
+        padding: 0rem;
+        margin: 0rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    div.colum1{
+        right: unset;
+        left: 2.5rem;
+        text-align: start;
+    }
+    div.colum2{
+        left: unset;
+        right: 2.5rem;
+        text-align: start;
+    }
+    footer section.sections div a{
+        padding: 0.5rem;
+    }
+
+    footer section.buscador{
+        max-width: 375px;
+        width: auto;
+        padding: 0rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        margin: 0rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    footer section.buscador div.copiright-1{
+        display: none;
+    }
+    div.copiright-2{
+        display: unset;
+        order: -1;
+    }
 }
